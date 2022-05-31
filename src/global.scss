@@ -1,0 +1,27 @@
+$main-c: #440381;
+$grey: #949494;
+$alert: #BA1B1D;
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-color: inherit;
+}
+
+input {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}

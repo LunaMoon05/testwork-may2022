@@ -1,0 +1,63 @@
+@import '../../global.scss';
+
+.header {
+  min-height: 90px;
+  background-color: $main-c;
+  padding: 30px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.tipBtn {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 4px;
+  transition: .09s ease-in-out;
+  border: 1px solid transparent;
+  &:hover {
+    background-color: $main-c;
+    border: 1px solid white;
+    color: white;
+  }
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.error {
+  color: $alert;
+  font-size: 13px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 5px;
+}
+
+.select {
+  min-width: 200px;
+  max-width: 500px;
+  margin-right: 10px;
+  &Wrapper {
+    position: relative;
+  }
+}
+
+.btnsWrapper {
+  margin-top: 20px;
+}

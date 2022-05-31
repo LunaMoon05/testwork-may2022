@@ -1,0 +1,53 @@
+@import '../../global.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+}
+
+.tip {
+  position: absolute;
+  bottom: 130%;
+  color: white;
+  left: 100%;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: .07s ease-in-out opacity;
+  &Btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 100% 100%;
+    padding: 8px;
+    font-weight: bold;
+    background-color: white;
+    margin-left: 5px;
+  }
+  &Container {
+    position: relative;
+  }
+}
+
+.field {
+  border: 1px solid $grey;
+  padding: 10px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  &_error {
+    border: 1px solid $alert;
+  }
+}
+
+.error {
+  color: $alert;
+  font-size: 13px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,46 @@
+@import '../../global.scss';
+
+.btn {
+  transition: .09s ease-in-out;
+  border-radius: 5px;
+  padding: 9px 11px;
+  font-size: 14px;
+  min-width: 120px;
+  border: 1px solid transparent;
+  &_main {
+    background-color: $main-c;
+    color: white;
+    &:hover {
+      border: 1px solid $main-c;
+      background-color: white;
+      color: $main-c;
+    }
+  }
+  &_default {
+    background-color: white;
+    color: $main-c;
+    &:hover {
+      border: 1px solid white;
+      background-color: $main-c;
+      color: white;
+    }
+  }
+  &_alert {
+    background-color: white;
+    color: $main-c;
+    &:hover {
+      border: 1px solid $alert;
+      background-color: $alert;
+      color: white;
+    }
+    &:disabled {
+      opacity: .7;
+      cursor: default;
+      &:hover {
+        background-color: white;
+        color: $main-c;
+        border: 1px solid transparent;
+      }
+    } 
+  }
+}
